@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-Unity进阶：ScriptableObject使用指南" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/07/28/Unity%E8%BF%9B%E9%98%B6%EF%BC%9AScriptableObject%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" class="article-date">
+  <time class="dt-published" datetime="2023-07-28T07:13:43.000Z" itemprop="datePublished">2023-07-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/07/28/Unity%E8%BF%9B%E9%98%B6%EF%BC%9AScriptableObject%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">Unity进阶：ScriptableObject使用指南</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <hr>
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在游戏开发过程中，我们会经常与数据打交道。很多时候，我们会为游戏对象配置数据，比如玩家初始生命值、技能伤害等。那么就需要有个能够存储数据的东西来和游戏对象进行交互。</p>
+<p>假设现在要做一个“打飞机”的游戏，玩家操控的飞机在吃了不同道具后会发射不同类型的子弹，这些子弹的飞行速度和伤害各不相同。那么显然我们要为每一种子弹配置好它的属性值。</p>
+<p>实现方式有很多，比如我为每种子弹创建预制体，然后写脚本去定义代表子弹各个属性的成员变量，在那脚本挂载到子弹预制体上。为了方便在开发调试我们可以将这些变量声明为public，以便我们在编辑器面板中对数据进行改动。</p>
+<p><img src="/1.png"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/07/28/Unity%E8%BF%9B%E9%98%B6%EF%BC%9AScriptableObject%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/" data-id="clmtdoonz0005egru1bmn2vlm" data-title="Unity进阶：ScriptableObject使用指南" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-Unity小案例：“跳一跳”小游戏的简单实现" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/12/Unity%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E2%80%9C%E8%B7%B3%E4%B8%80%E8%B7%B3%E2%80%9D%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/" class="article-date">
+  <time class="dt-published" datetime="2023-06-11T17:41:33.000Z" itemprop="datePublished">2023-06-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/12/Unity%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E2%80%9C%E8%B7%B3%E4%B8%80%E8%B7%B3%E2%80%9D%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/">Unity小案例：“跳一跳”小游戏的简单实现</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>从这篇开始，我要把一些做过的unity小案例搬到这上面来^_^</p>
+<hr>
+<hr>
+<h3 id="一个模仿微信跳一跳小游戏的案例，"><a href="#一个模仿微信跳一跳小游戏的案例，" class="headerlink" title="一个模仿微信跳一跳小游戏的案例，"></a>一个模仿微信跳一跳小游戏的案例，</h3><p>（<font color=white>其实是学姐偷懒找我帮做的结课作业</font>）</p>
+<details>
+<summary>点击查看详细内容</summary>
+展开的内容
+</details>
+
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.UIElements;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PlayerControl</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    Rigidbody rb;</span><br><span class="line">    <span class="built_in">float</span> timer;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> maxChargeTime;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> jumpPower;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> doJump;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> isGround;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        rb = GetComponent&lt;Rigidbody&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (Input.GetKey(KeyCode.Mouse0) &amp;&amp; timer &lt; maxChargeTime)</span><br><span class="line">        &#123;</span><br><span class="line">            timer += Time.deltaTime;</span><br><span class="line">            transform.localScale = <span class="keyword">new</span> Vector3(<span class="number">1</span>, <span class="number">0.5f</span> + (maxChargeTime - timer) / (<span class="number">2</span> * maxChargeTime), <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (Input.GetKeyUp(KeyCode.Mouse0))</span><br><span class="line">        &#123;</span><br><span class="line">            doJump = <span class="literal">true</span>;</span><br><span class="line">            transform.localScale = Vector3.one;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(transform.position.y&lt;<span class="number">-0.5f</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            GameManage.S.gameOver = <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">FixedUpdate</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (doJump &amp;&amp; isGround)</span><br><span class="line">        &#123;</span><br><span class="line">            Jump();</span><br><span class="line">            doJump = <span class="literal">false</span>;</span><br><span class="line">            isGround = <span class="literal">false</span>;</span><br><span class="line">            timer = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Jump</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Vector3 dir;</span><br><span class="line">        <span class="keyword">if</span> (GameManage.S.playerIsFacingYAxis)</span><br><span class="line">        &#123;</span><br><span class="line">            dir = transform.forward;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dir = -transform.right;</span><br><span class="line">        &#125;</span><br><span class="line">        dir.y = <span class="number">1</span>;</span><br><span class="line">        rb.velocity = dir * timer * jumpPower;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">OnCollisionEnter</span>(<span class="params">Collision collision</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (collision.gameObject.CompareTag(<span class="string">&quot;Ground&quot;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (collision.contacts[<span class="number">0</span>].normal == Vector3.up)</span><br><span class="line">            &#123;</span><br><span class="line">                isGround = <span class="literal">true</span>;</span><br><span class="line">                GameManage.S.HitGround(transform.position);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="完整代码："><a href="#完整代码：" class="headerlink" title="完整代码："></a>完整代码：</h3><p>PlayerControl.cs</p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">using</span> System.Collections.Generic;</span><br><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"><span class="keyword">using</span> UnityEngine.UIElements;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">PlayerControl</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    Rigidbody rb;</span><br><span class="line">    <span class="built_in">float</span> timer;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> maxChargeTime;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> jumpPower;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> doJump;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">bool</span> isGround;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        rb = GetComponent&lt;Rigidbody&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (Input.GetKey(KeyCode.Mouse0) &amp;&amp; timer &lt; maxChargeTime)</span><br><span class="line">        &#123;</span><br><span class="line">            timer += Time.deltaTime;</span><br><span class="line">            transform.localScale = <span class="keyword">new</span> Vector3(<span class="number">1</span>, <span class="number">0.5f</span> + (maxChargeTime - timer) / (<span class="number">2</span> * maxChargeTime), <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (Input.GetKeyUp(KeyCode.Mouse0))</span><br><span class="line">        &#123;</span><br><span class="line">            doJump = <span class="literal">true</span>;</span><br><span class="line">            transform.localScale = Vector3.one;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(transform.position.y&lt;<span class="number">-0.5f</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            GameManage.S.gameOver = <span class="literal">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">FixedUpdate</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (doJump &amp;&amp; isGround)</span><br><span class="line">        &#123;</span><br><span class="line">            Jump();</span><br><span class="line">            doJump = <span class="literal">false</span>;</span><br><span class="line">            isGround = <span class="literal">false</span>;</span><br><span class="line">            timer = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Jump</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        Vector3 dir;</span><br><span class="line">        <span class="keyword">if</span> (GameManage.S.playerIsFacingYAxis)</span><br><span class="line">        &#123;</span><br><span class="line">            dir = transform.forward;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            dir = -transform.right;</span><br><span class="line">        &#125;</span><br><span class="line">        dir.y = <span class="number">1</span>;</span><br><span class="line">        rb.velocity = dir * timer * jumpPower;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">OnCollisionEnter</span>(<span class="params">Collision collision</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span> (collision.gameObject.CompareTag(<span class="string">&quot;Ground&quot;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span> (collision.contacts[<span class="number">0</span>].normal == Vector3.up)</span><br><span class="line">            &#123;</span><br><span class="line">                isGround = <span class="literal">true</span>;</span><br><span class="line">                GameManage.S.HitGround(transform.position);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/12/Unity%E5%B0%8F%E6%A1%88%E4%BE%8B%EF%BC%9A%E2%80%9C%E8%B7%B3%E4%B8%80%E8%B7%B3%E2%80%9D%E5%B0%8F%E6%B8%B8%E6%88%8F%E7%9A%84%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/" data-id="clmtdoonz0004egru16ilhfhj" data-title="Unity小案例：“跳一跳”小游戏的简单实现" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-测试显示图片问题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/10/%E6%B5%8B%E8%AF%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%E9%97%AE%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2023-06-10T06:27:12.000Z" itemprop="datePublished">2023-06-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/10/%E6%B5%8B%E8%AF%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%E9%97%AE%E9%A2%98/">测试显示图片问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><img src="/1642005032081.jpg" alt="hudieren"></p>
+<p><strong>可算是显示了</strong></p>
+<p>但是预览还是不显示0.o</p>
+<p>而且Typora里也不显示</p>
+<p>（先这样吧能用就行，等以后好好回来学习）</p>
+<hr>
+<p><strong>十分感谢</strong></p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/542101567">Hexo 图片插入无法显示的问题 - 知乎 (zhihu.com)</a></p>
+<p>与</p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/f72aaad7b852">HEXO插入图片（详细版） - 简书 (jianshu.com)</a></p>
+<p>与</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/265077468">hexo博客如何插入图片 - 知乎 (zhihu.com)</a></p>
+<p>三位大佬的教程！</p>
+<p>我的改动方法：</p>
+<p><img src="/QQ%E6%88%AA%E5%9B%BE20230610153331.png" alt="改动前"></p>
+<center>↓ ↓ ↓</center>
+
+<p><img src="/QQ%E6%88%AA%E5%9B%BE20230610153403.png" alt="改动后">（markdown好像没有居中语法)</p>
+<p><img src="/1642005032103.jpg"></p>
+<hr>
+<p>2023.8.28 下午15 : 15 更新：</p>
+<p>找到了一个更好用的方法：</p>
+<p>图片除了可以放在统一的 images 文件夹中，还可以放在文章自己的目录中。文章的目录可以通过配置 _config.yml 来生成。</p>
+<p>打开项目根目录中的 _config.yml 文件，将 _config.yml文件中的配置项 post_asset_folder 设为 true 后，执行命令 hexo new “post_name”，在 source&#x2F;posts 中会生成文章 post_name.md 和同名文件夹 post_name。</p>
+<p>将图片资源放在 post_name 文件夹中，文章就可以使用相对路径引用图片资源了。</p>
+<p>但是使用这种引用方式，图片只能在文章中显示，但无法在首页中正常显示。</p>
+<p>如果希望图片在文章和首页中同时显示，可以使用标签插件语法(推荐使用这种引用方法)。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img image.jpg This is an image %&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/547520780">2022 Hexo 博客搭建和使用教程(Windows) - 知乎 (zhihu.com)</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/10/%E6%B5%8B%E8%AF%95%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87%E9%97%AE%E9%A2%98/" data-id="clmtdooo5000jegruc97h35iy" data-title="测试显示图片问题" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-第一篇博客捏" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/10/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%8D%8F/" class="article-date">
+  <time class="dt-published" datetime="2023-06-10T04:28:58.000Z" itemprop="datePublished">2023-06-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/10/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%8D%8F/">第一篇博客捏^_^</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>你好啊，我是Zaromeow</p>
+<h1 id="我还不会用Markdown呀"><a href="#我还不会用Markdown呀" class="headerlink" title="我还不会用Markdown呀"></a>我还不会用Markdown呀</h1><p>&#x3D;&#x3D; 亮 &#x3D;&#x3D;</p>
+<p><strong>加粗</strong></p>
+<p><em>倾斜</em></p>
+<hr>
+<p>好像主页的预览页面太长了</p>
+<p>一直写一直有</p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>等下去研究一下<font color=#92cafa size=4><strong>（当天：已经知道了，只要在需要缩略的地方写上&lt;!– more –&gt;就好了，或者在开头的Front-Matter里写上：description: 预览能看到的内容）</font></strong></p>
+<p>先去学习markdown语法去</p>
+<p>​	</p>
+<p>话说这里面有小表情吗⊙(・◇・)？</p>
+<hr>
+<p>好像有时候更新不会及时同步</p>
+<h1 id="一级"><a href="#一级" class="headerlink" title="一级"></a>一级</h1><h2 id="二级"><a href="#二级" class="headerlink" title="二级"></a>二级</h2><h3 id="三级"><a href="#三级" class="headerlink" title="三级"></a>三级</h3><p>哈哈</p>
+<p>试试图片 !</p>
+<p><img src="E:\桌面美化\壁纸\1642005032081.jpg" alt="1642005032081"></p>
+<p>好像显示不出来？</p>
+<hr>
+<hr>
+<h1 id="想了一想还是在这里练习markdown语法吧"><a href="#想了一想还是在这里练习markdown语法吧" class="headerlink" title="想了一想还是在这里练习markdown语法吧"></a>想了一想还是在这里练习markdown语法吧</h1><p>（我是前端小白，只是略微知道一点html与css语法然而卵全不会用）</p>
+<hr>
+<p>怎么改字体颜色呀</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">red</span>&gt;</span>我是红色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">#008000</span>&gt;</span>我是绿色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">yellow</span>&gt;</span>我是黄色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">Blue</span>&gt;</span>我是蓝色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>= <span class="string">#871F78</span>&gt;</span>我是紫色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>= <span class="string">#DCDCDC</span>&gt;</span>我是浅灰色<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">size</span>=<span class="string">5</span>&gt;</span>我是尺寸<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">face</span>=<span class="string">&quot;逐浪立楷&quot;</span> <span class="attr">color</span>=<span class="string">green</span> <span class="attr">size</span>=<span class="string">10</span>&gt;</span>我是逐浪立楷，绿色，尺寸为5<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+<p><font color=red>我是红色</font><br><font color=#008000>我是绿色</font><br><font color=yellow>我是黄色</font><br><font color=Blue>我是蓝色</font><br><font color= #871F78>我是紫色</font><br><font color= #DCDCDC>我是浅灰色</font><br><font size=5>我是尺寸</font><br><font face="逐浪立楷" color=green size=10>我是逐浪立楷，绿色，尺寸为5</font></p>
+<hr>
+<p><strong>空白行：</strong>&lt;br&gt;</p>
+<p>你们有没有发现</p>
+<br>
+
+<p>夏天真的比冬天热很多</p>
+<hr>
+<p>啥都不懂呀现在，网页的格式还有想要的功能都不会实现，先原谅一回吧</p>
+<hr>
+<p><strong>代码语法测试：</strong></p>
+<p>这是New Bing生成的一段代码：</p>
+<p>你好，这是Bing。我可以尝试帮你写一段控制角色移动的C#代码。你可以参考以下代码，它使用了<strong>Rigidbody</strong>组件和<strong>Input</strong>类来获取用户的输入，并根据移动方向和速度更新角色的位置(<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/67965706/unity-rigidbody)%E3%80%82%E4%BD%A0%E5%8F%AF%E4%BB%A5%E6%A0%B9%E6%8D%AE%E4%BD%A0%E7%9A%84%E9%9C%80%E6%B1%82%E4%BF%AE%E6%94%B9%E4%BB%A3%E7%A0%81%E4%B8%AD%E7%9A%84%E5%8F%82%E6%95%B0%E5%92%8C%E9%80%BB%E8%BE%91%E3%80%82">https://stackoverflow.com/questions/67965706/unity-rigidbody)。你可以根据你的需求修改代码中的参数和逻辑。</a></p>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> UnityEngine;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">CharacterMovement</span> : <span class="title">MonoBehaviour</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 移动速度</span></span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">float</span> speed = <span class="number">5f</span>;</span><br><span class="line">    <span class="comment">// 移动方向</span></span><br><span class="line">    <span class="keyword">private</span> Vector3 direction;</span><br><span class="line">    <span class="comment">// 刚体组件</span></span><br><span class="line">    <span class="keyword">private</span> Rigidbody rb;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Start</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 获取刚体组件</span></span><br><span class="line">        rb = GetComponent&lt;Rigidbody&gt;();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">Update</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 获取水平和垂直方向的输入</span></span><br><span class="line">        <span class="built_in">float</span> horizontal = Input.GetAxis(<span class="string">&quot;Horizontal&quot;</span>);</span><br><span class="line">        <span class="built_in">float</span> vertical = Input.GetAxis(<span class="string">&quot;Vertical&quot;</span>);</span><br><span class="line">        <span class="comment">// 计算移动方向</span></span><br><span class="line">        direction = <span class="keyword">new</span> Vector3(horizontal, <span class="number">0</span>, vertical).normalized;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">FixedUpdate</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 根据移动方向和速度更新刚体的位置</span></span><br><span class="line">        rb.MovePosition(transform.position + direction * speed * Time.fixedDeltaTime);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<p>2023&#x2F;6&#x2F;22</p>
+<p>昨天把电脑整个重装了一遍系统，发现以前的博客用不了了</p>
+<p>于是又照着下面教程装了一遍</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36667170/article/details/118163563">换电脑后怎么迁移hexo博客？_hexo博客迁移_Ann’s Blog的博客-CSDN博客</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_36667170/article/details/79094257">Git教程 SSH keys配置_Ann’s Blog的博客-CSDN博客</a></p>
+<hr>
+<p>下次就从这里开始写吧</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/10/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%8D%8F/" data-id="clmtdooo9001fegru6t644ut4" data-title="第一篇博客捏^_^" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%AC%A3%E5%96%9C%E8%8B%A5%E7%8B%82/" rel="tag">欣喜若狂</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/06/09/hello-world/" class="article-date">
+  <time class="dt-published" datetime="2023-06-08T16:00:00.000Z" itemprop="datePublished">2023-06-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/06/09/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/06/09/hello-world/" data-id="clmtdooo10009egruedarg5vz" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-%E5%9F%BA%E7%A1%80/" rel="tag">C#基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Lua/" rel="tag">Lua</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mipmap/" rel="tag">Mipmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UGUI/" rel="tag">UGUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learn/" rel="tag">learn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%8F%E7%A8%8B/" rel="tag">协程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" rel="tag">单例模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AF%B9%E8%B1%A1%E6%B1%A0/" rel="tag">对象池</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/" rel="tag">小功能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%8B%E6%B8%B8/" rel="tag">手游</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F/" rel="tag">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="tag">数据结构与算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/" rel="tag">有限状态机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AC%A3%E5%96%9C%E8%8B%A5%E7%8B%82/" rel="tag">欣喜若狂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag">设计模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/" rel="tag">迭代器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9A%8F%E6%9C%BA%E6%92%AD%E6%94%BE/" rel="tag">随机播放</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C-%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">C#基础</a> <a href="/tags/Lua/" style="font-size: 10px;">Lua</a> <a href="/tags/Mipmap/" style="font-size: 10px;">Mipmap</a> <a href="/tags/UGUI/" style="font-size: 10px;">UGUI</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/learn/" style="font-size: 15px;">learn</a> <a href="/tags/%E5%8D%8F%E7%A8%8B/" style="font-size: 10px;">协程</a> <a href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">单例模式</a> <a href="/tags/%E5%AF%B9%E8%B1%A1%E6%B1%A0/" style="font-size: 10px;">对象池</a> <a href="/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/" style="font-size: 10px;">小功能</a> <a href="/tags/%E6%89%8B%E6%B8%B8/" style="font-size: 10px;">手游</a> <a href="/tags/%E6%8E%92%E5%BA%8F/" style="font-size: 10px;">排序</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 10px;">数据结构与算法</a> <a href="/tags/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/" style="font-size: 10px;">有限状态机</a> <a href="/tags/%E6%AC%A3%E5%96%9C%E8%8B%A5%E7%8B%82/" style="font-size: 10px;">欣喜若狂</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">测试</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 15px;">设计模式</a> <a href="/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/" style="font-size: 10px;">迭代器</a> <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%92%AD%E6%94%BE/" style="font-size: 10px;">随机播放</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/16/Unity%E5%B0%8F%E5%8A%9F%E8%83%BD%EF%BC%9A%E9%9A%8F%E6%9C%BA%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84%E6%AD%8C%E6%9B%B2/">Unity小功能：随机播放列表中的歌曲</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/13/Unity%EF%BC%9AUGUI%E5%9F%BA%E7%A1%80/">Unity：UGUI基础</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/">多级渐远纹理Mipmap</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%AF%B9%E8%B1%A1%E6%B1%A0%E7%B3%BB%E7%BB%9F/">设计模式：对象池系统</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F/">数据结构与算法：排序</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

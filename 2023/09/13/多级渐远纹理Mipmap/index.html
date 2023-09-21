@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>多级渐远纹理Mipmap | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="百度百科MIP来源于拉丁文中的multum in parvo，意为在一个小空间里的多数。MIP map技术与材质贴图技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状图">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多级渐远纹理Mipmap">
+<meta property="og:url" content="http://example.com/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="百度百科MIP来源于拉丁文中的multum in parvo，意为在一个小空间里的多数。MIP map技术与材质贴图技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状图">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/1.png">
+<meta property="og:image" content="http://example.com/2.png">
+<meta property="og:image" content="http://example.com/3.png">
+<meta property="og:image" content="http://example.com/4.jpg">
+<meta property="og:image" content="http://example.com/5.jpg">
+<meta property="og:image" content="http://example.com/6.gif">
+<meta property="article:published_time" content="2023-09-13T08:27:48.000Z">
+<meta property="article:modified_time" content="2023-09-17T07:45:53.055Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="Mipmap">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/1.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-多级渐远纹理Mipmap" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/" class="article-date">
+  <time class="dt-published" datetime="2023-09-13T08:27:48.000Z" itemprop="datePublished">2023-09-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      多级渐远纹理Mipmap
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="百度百科"><a href="#百度百科" class="headerlink" title="百度百科"></a>百度百科</h3><p>MIP来源于<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%8B%89%E4%B8%81%E6%96%87/360796?fromModule=lemma_inlink">拉丁文</a>中的multum in parvo，意为在一个小空间里的多数。MIP map技术与<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9D%90%E8%B4%A8%E8%B4%B4%E5%9B%BE/7556421?fromModule=lemma_inlink">材质贴图</a>技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状图形）在图像中出现，这种锯齿状图形可能是由于在不同分辨率下使用bit map图像产生的。</p>
+<hr>
+<h3 id="先了解纹理过滤"><a href="#先了解纹理过滤" class="headerlink" title="先了解纹理过滤"></a>先了解纹理过滤</h3><p>想要了解为什么要使用Mipmap，首先要知道纹理过滤是什么。</p>
+<p>当你在玩吃鸡的时候可能会发现一个现象，一个人在距离你5米的地方，可以观察到敌人的一举一动，包括身上的装备等等，但当你拿到98k时，你会蹲在远处狙击别人，这时不开镜的你看500米远处的敌人只能看到一个黑点，这其中远近看到的区别就有应用到纹理过滤。</p>
+<p>游戏中A物体的游戏设计纹理贴图是400*400Texel(纹理像素)</p>
+<p>1.当你(摄像机)跟A物体的距离为0时，在你屏幕上显示的像素就是400*400，跟贴图的纹理像素大小相同，此时不需要做特殊处理</p>
+<p>2.假设你离A物体10米远时,屏幕显示的pix为200<em>200,当200</em>200的像素要显示400<em>400纹理像素的物体时，此时的一颗像素需要映射2</em>2的纹理像素，这个时候就有个问题了，这颗像素要显示什么颜色？只能用合适的算法在这2*2里的纹理像素中计算得出，在这里引用OpenGL中的邻近过滤和线性过滤：</p>
+<p>GL_NEAREST（也叫邻近过滤，Nearest Neighbor Filtering）是OpenGL默认的纹理过滤方式。当设置为GL_NEAREST的时候，OpenGL会选择中心点最接近纹理坐标的那个像素。下图中你可以看到四个像素，加号代表纹理坐标。左上角那个纹理像素的中心距离纹理坐标最近，所以它会被选择为样本颜色：</p>
+<p><img src="/1.png" alt="临近过滤"></p>
+<p>GL_LINEAR（也叫线性过滤，(Bi)linear Filtering）它会基于纹理坐标附近的纹理像素，计算出一个插值，近似出这些纹理像素之间的颜色。一个纹理像素的中心距离纹理坐标越近，那么这个纹理像素的颜色对最终的样本颜色的贡献越大。下图中你可以看到返回的颜色是邻近像素的混合色：</p>
+<p><img src="/2.png" alt="线性过滤"></p>
+<p>那么这两种纹理过滤方式有怎样的视觉效果呢？让我们看看在一个很大的物体上应用一张低分辨率的纹理会发生什么吧（纹理被放大了，每个纹理像素都能看到）：</p>
+<p><img src="/3.png"></p>
+<hr>
+<h3 id="当距离很远的时候怎么算"><a href="#当距离很远的时候怎么算" class="headerlink" title="当距离很远的时候怎么算"></a>当距离很远的时候怎么算</h3><p>此时的你来到远离市区500米的山上，想要狙击别人，你只能看到一个个很小的人影，在不开镜的情况下只能看到人的跑动。</p>
+<p>此时敌人在屏幕显示为20<em>20，400</em>400的纹理像素映射在20<em>20的像素内，一颗像素需要映射20</em>20的纹理像素，如果直接进行纹理过滤，那么在使用线性过滤的情况下，只会使用纹理坐标映射点的周围4颗纹理像素进行计算，那么其他的396颗纹理像素就没了参考价值，考虑极端情况下，如果纹理坐标映射点在人的头发，那么不就只是显示黑色了？ ，那么在最终的显示效果上可能会产生锯齿或者摩尔纹，摩尔纹长这样：</p>
+<p><img src="/4.jpg" alt="摩尔纹"></p>
+<p>这视觉效果必须得改善，那我不能参考所有需要映射的纹理像素进行平均取色吗？可以，但是你的GPU允许你这么做吗，有兴趣可以做个实验，自己采样所有纹理像素进行纹理过滤，此时你如果远处的模型较多的情况下，</p>
+<p>使用原生的线性过滤：60FPS，渲染一个物体每颗像素的颜色需要计算4个纹理像素的插值。</p>
+<p>采样所有纹理像素进行纹理过滤：1FPS,渲染一个物体每颗像素的颜色需要采样计算400个纹理像素的插值。</p>
+<p>可以想象性能换质量的消耗实在太大，在如今的GPU算力下是施行不了的.</p>
+<p>那有办法不损耗算力，又可以提升显示质量吗？可以，使用Mipmap.</p>
+<hr>
+<h3 id="Mipmap概念"><a href="#Mipmap概念" class="headerlink" title="Mipmap概念"></a>Mipmap概念</h3><p>想象一下，假设我们有一个包含着上千物体的大房间，每个物体上都有纹理。有些物体会很远，但其纹理会拥有与近处物体同样高的分辨率。由于远处的物体可能只产生很少的片段，OpenGL从高分辨率纹理中为这些片段获取正确的颜色值就很困难，因为它需要对一个跨过纹理很大部分的片段只拾取一个纹理颜色。在小物体上这会产生不真实的感觉，更不用说对它们使用高分辨率纹理浪费内存的问题了。</p>
+<p>OpenGL使用一种叫做多级渐远纹理(Mipmap)的概念来解决这个问题，它简单来说就是一系列的纹理图像，后一个纹理图像是前一个的二分之一。多级渐远纹理背后的理念很简单：距观察者的距离超过一定的阈值，OpenGL会使用不同的多级渐远纹理，即最适合物体的距离的那个。由于距离远，解析度不高也不会被用户注意到。同时，多级渐远纹理另一加分之处是它的性能非常好。</p>
+<hr>
+<h3 id="Mipmap效果"><a href="#Mipmap效果" class="headerlink" title="Mipmap效果"></a>Mipmap效果</h3><p><img src="/5.jpg" alt="Mipmap"></p>
+<p>上图是Mipmap的纹理，在储存上最大的为mipmap0，mipmap1的分辨率为mipmap0的一半,以此一直创建下去，直到纹理为一个像素时停止，在某些引擎中可以设置Mipmap的强弱，也就是Mipmap的创建次数。但一般直接拉到最强，因为越到后面创建的大小越小，占用的内存也就越小。</p>
+<p><img src="/6.gif" alt="Mipmap效果"></p>
+<p><strong>不使用Mipmap：</strong><br>        在先前讲的1颗像素需要映射20<em>20的纹理像素时，显示效果失真，锯齿以及可能会产生摩尔纹，发生的原因是在纹理过滤时，一颗像素只采样了原本20</em>20纹理像素里2*2纹理像素的颜色进行线性插值，得到最终的颜色，其他的396颗纹理像素无用，浪费显存且取色不精确。</p>
+<p><strong>使用Mipmap:</strong><br>Mipmap创建：预先创建原纹理大小2分之一的多级渐远纹理，在多级渐远纹理取色采样时，也会进行线性过滤，可以理解成预先创建每隔一定阈值(也就是每次映射像素为上一级别多级渐远纹理的2分之一的时候）并经过了线性过滤的纹理。</p>
+<p>使用Mipmap的渲染过程：20<em>20的像素需要映射400</em>400的纹理像素时，检测到一颗像素需要映射到纹理像素为20<em>20，在Mipmap纹理中里寻找最接近20</em>20纹理像素的多级渐远纹理，并使用此多级渐远纹理进行采样。</p>
+<p>此时采样用的多级渐远纹理的颜色也是从上一级的多级渐远纹理迭代采样插值计算而来，也就是一颗像素映射此多级渐远纹理间接插值计算了20<em>20的纹理像素的颜色，取色的效果当然比一颗像素直接映射原图20</em>20只采样了2*2的纹理像素颜色进行线性插值要好得多，使用Mipmap就避免了采样的纹理像素过少而失真，</p>
+<p>理论上点对点的映射最为精确，而如果最邻近的子纹理跟20*20无法点对点采样映射，还可以设置多级渐远纹理的过滤方式</p>
+<table>
+<thead>
+<tr>
+<th>过滤方式</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>GL_NEAREST_MIPMAP_NEAREST</td>
+<td>使用最邻近的多级渐远纹理来匹配像素大小，并使用邻近插值进行纹理采样</td>
+</tr>
+<tr>
+<td>GL_LINEAR_MIPMAP_NEAREST</td>
+<td>使用最邻近的多级渐远纹理级别，并使用线性插值进行采样</td>
+</tr>
+<tr>
+<td>GL_NEAREST_MIPMAP_LINEAR</td>
+<td>在两个最匹配像素大小的多级渐远纹理之间进行线性插值，使用邻近插值进行采样</td>
+</tr>
+<tr>
+<td>GL_LINEAR_MIPMAP_LINEAR</td>
+<td>在两个邻近的多级渐远纹理之间使用线性插值，并使用线性插值进行采样</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="Mipmap的优点与缺点"><a href="#Mipmap的优点与缺点" class="headerlink" title="Mipmap的优点与缺点"></a>Mipmap的优点与缺点</h3><p><strong>优点:</strong><br>1.质量高：避免了在远距离情况下的采样频率低和数据频率高造成的失真和摩尔纹，效果比无Mipmap好得多。</p>
+<p>2.性能好：避免了不使用Mipmap下距离远时采样频率低和数据频率高而照成texture cache命中率不高(相邻Pixel采样Texel时uv相差比较大)使性能下降。</p>
+<p><strong>缺点：</strong><br>1.占用显存，可使用ue的纹理流缓存优化（IO换显存）。</p>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42428486/article/details/118856697">Mipmap详解(有无Mipmap区别、原理、优点、缺点、优化)_爱吃的板栗.的博客-CSDN博客</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/" data-id="clmtdooo2000cegruh5ogazsl" data-title="多级渐远纹理Mipmap" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mipmap/" rel="tag">Mipmap</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/09/13/Unity%EF%BC%9AUGUI%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Unity：UGUI基础
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%AF%B9%E8%B1%A1%E6%B1%A0%E7%B3%BB%E7%BB%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">设计模式：对象池系统</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/C-%E5%9F%BA%E7%A1%80/" rel="tag">C#基础</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Lua/" rel="tag">Lua</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mipmap/" rel="tag">Mipmap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UGUI/" rel="tag">UGUI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Unity/" rel="tag">Unity</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/learn/" rel="tag">learn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%8F%E7%A8%8B/" rel="tag">协程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" rel="tag">单例模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AF%B9%E8%B1%A1%E6%B1%A0/" rel="tag">对象池</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/" rel="tag">小功能</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%89%8B%E6%B8%B8/" rel="tag">手游</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%8E%92%E5%BA%8F/" rel="tag">排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" rel="tag">数据结构与算法</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/" rel="tag">有限状态机</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%AC%A3%E5%96%9C%E8%8B%A5%E7%8B%82/" rel="tag">欣喜若狂</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" rel="tag">设计模式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/" rel="tag">迭代器</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9A%8F%E6%9C%BA%E6%92%AD%E6%94%BE/" rel="tag">随机播放</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/C-%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">C#基础</a> <a href="/tags/Lua/" style="font-size: 10px;">Lua</a> <a href="/tags/Mipmap/" style="font-size: 10px;">Mipmap</a> <a href="/tags/UGUI/" style="font-size: 10px;">UGUI</a> <a href="/tags/Unity/" style="font-size: 20px;">Unity</a> <a href="/tags/learn/" style="font-size: 15px;">learn</a> <a href="/tags/%E5%8D%8F%E7%A8%8B/" style="font-size: 10px;">协程</a> <a href="/tags/%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" style="font-size: 10px;">单例模式</a> <a href="/tags/%E5%AF%B9%E8%B1%A1%E6%B1%A0/" style="font-size: 10px;">对象池</a> <a href="/tags/%E5%B0%8F%E5%8A%9F%E8%83%BD/" style="font-size: 10px;">小功能</a> <a href="/tags/%E6%89%8B%E6%B8%B8/" style="font-size: 10px;">手游</a> <a href="/tags/%E6%8E%92%E5%BA%8F/" style="font-size: 10px;">排序</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/" style="font-size: 10px;">数据结构与算法</a> <a href="/tags/%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/" style="font-size: 10px;">有限状态机</a> <a href="/tags/%E6%AC%A3%E5%96%9C%E8%8B%A5%E7%8B%82/" style="font-size: 10px;">欣喜若狂</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">测试</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 15px;">设计模式</a> <a href="/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/" style="font-size: 10px;">迭代器</a> <a href="/tags/%E9%9A%8F%E6%9C%BA%E6%92%AD%E6%94%BE/" style="font-size: 10px;">随机播放</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/09/">September 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/08/">August 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">July 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/09/16/Unity%E5%B0%8F%E5%8A%9F%E8%83%BD%EF%BC%9A%E9%9A%8F%E6%9C%BA%E6%92%AD%E6%94%BE%E5%88%97%E8%A1%A8%E4%B8%AD%E7%9A%84%E6%AD%8C%E6%9B%B2/">Unity小功能：随机播放列表中的歌曲</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/13/Unity%EF%BC%9AUGUI%E5%9F%BA%E7%A1%80/">Unity：UGUI基础</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/">多级渐远纹理Mipmap</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%AF%B9%E8%B1%A1%E6%B1%A0%E7%B3%BB%E7%BB%9F/">设计模式：对象池系统</a>
+          </li>
+        
+          <li>
+            <a href="/2023/09/09/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95-%E6%8E%92%E5%BA%8F/">数据结构与算法：排序</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
