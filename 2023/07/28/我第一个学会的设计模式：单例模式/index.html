@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='zh-CN'>
 
 <head>
   <meta name="generator" content="Hexo 6.3.0">
@@ -29,7 +29,7 @@
 <meta property="og:url" content="https://caromeow1.github.io/2023/07/28/%E6%88%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%BC%9A%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Caromeow">
 <meta property="og:description" content="首次接触在跟随@阿严Gaming老师的横板卷轴飞机大战教程中，第一季接触到了单例模式，虽然不太明白实现的原理，但是感觉很好用，后来也经常在自己的个人项目中用到。   单例模式的特点​	1.单例类只能有一个实例。 ​	2.单例类必须自己创建自己的唯一实例。 ​	3.单例类必须给所有其他对象提供这一实例。 Unity中的单例就是整个场景中有且只有一个的组件：Audio Manager、Game Man">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://caromeow1.github.io/2023/07/28/%E6%88%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%BC%9A%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/plane.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210309161229353.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1d3NjIyMTkwNQ==,size_16,color_FFFFFF,t_70">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20210309161320893.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1d3NjIyMTkwNQ==,size_16,color_FFFFFF,t_70">
@@ -56,6 +56,8 @@
   
 
   
+    <link rel="shortcut icon" href="https://img1.imgtp.com/2023/09/22/nnXkMlxF.png">
+  
 
   
 
@@ -77,14 +79,14 @@
 
   
 
-<header class="header"><div class="logo-wrap"><a class="title" href="/"><div class="main" ff="title">Caromeow</div></a></div>
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://img1.imgtp.com/2023/09/22/nnXkMlxF.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Caromeow</div><div class="sub normal cap">自由自在，没有烦恼</div><div class="sub hover cap" style="opacity:0"> 热爱游戏，善待生活</div></a></div>
 
 <nav class="menu dis-select"></nav>
 </header>
 
 
 <div class="widgets">
-<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">No Results!</div></div></div></widget>
+<widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
 
 <widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">我第一个学会的设计模式：单例模式</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A6%96%E6%AC%A1%E6%8E%A5%E8%A7%A6"><span class="toc-text">首次接触</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%E7%9A%84%E7%89%B9%E7%82%B9"><span class="toc-text">单例模式的特点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%8D%95%E4%BE%8B"><span class="toc-text">泛型单例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%81%E4%B9%85%E6%B3%9B%E5%9E%8B%E5%8D%95%E4%BE%8B"><span class="toc-text">持久泛型单例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%94%E7%94%A8%E5%AE%9E%E4%BE%8B%EF%BC%9A"><span class="toc-text">应用实例：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%89%A9%E5%B1%95"><span class="toc-text">扩展</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0%E6%80%9D%E8%B7%AF"><span class="toc-text">实现思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%87%92%E6%B1%89%E6%A8%A1%E5%BC%8F"><span class="toc-text">懒汉模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A5%BF%E6%B1%89%E6%A8%A1%E5%BC%8F"><span class="toc-text">饿汉模式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E4%BE%8B%E4%B8%80%EF%BC%9A%E6%9C%80%E7%AE%80%E5%8D%95%E6%9C%80%E5%B8%B8%E7%94%A8%E7%9A%84%E5%86%99%E6%B3%95-A-%E2%80%94-%E7%BB%A7%E6%89%BF%E4%BA%8EMonoBehaviour"><span class="toc-text">单例一：最简单最常用的写法 A — 继承于MonoBehaviour</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E4%BE%8B%E4%BA%8C%EF%BC%9A%E5%8D%87%E7%BA%A7%E7%89%88%E5%8D%95%E4%BE%8B%E6%96%B9%E6%B3%95-B-%E2%80%94-%E7%BB%A7%E6%89%BF%E4%BA%8EMonoBehaviour"><span class="toc-text">单例二：升级版单例方法 B — 继承于MonoBehaviour</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E4%BE%8B%E4%B8%89%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%96%B9%E6%B3%95-C-%E2%80%94-%E4%B8%8D%E7%BB%A7%E6%89%BF%E4%BA%8EMonoBehaviour"><span class="toc-text">单例三：单例方法 C — 不继承于MonoBehaviour</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%95%E4%BE%8B%E4%BA%94%EF%BC%9A%E6%9C%80%E7%BB%88%E7%89%88E-%E2%80%94-%E4%B8%8D%E7%BB%A7%E6%89%BF%E4%BA%8EMonoBehaviour%EF%BC%88%E4%B8%8D%E9%9A%8F%E7%9D%80%E5%9C%BA%E6%99%AF%E5%88%87%E6%8D%A2%E8%80%8C%E9%94%80%E6%AF%81%EF%BC%89"><span class="toc-text">单例五：最终版E — 不继承于MonoBehaviour（不随着场景切换而销毁）</span></a></li></ol></div></div></widget>
@@ -103,7 +105,7 @@
 
 
 
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2023-07-28T08:55:47.000Z">2023-07-28</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-07-28T08:55:47.000Z">2023-07-28</time></div></div>
 
 <article class='md-text content post'>
 <h1 class="article-title"><span>我第一个学会的设计模式：单例模式</span></h1>
@@ -168,12 +170,12 @@
 
 
 
-<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>License</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
+<div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div></section></div>
 
 </article>
 
-<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2023/08/27/%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8D%8F%E7%A8%8B/">迭代器和协程</a></div><div class="item" id="next"><div class="note">Older</div><a href="/2023/07/28/Unity%E8%BF%9B%E9%98%B6%EF%BC%9AScriptableObject%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">Unity进阶：ScriptableObject使用指南</a></div></section></div>
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">较新文章</div><a href="/2023/08/27/%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8D%8F%E7%A8%8B/">迭代器和协程</a></div><div class="item" id="next"><div class="note">较早文章</div><a href="/2023/07/28/Unity%E8%BF%9B%E9%98%B6%EF%BC%9AScriptableObject%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">Unity进阶：ScriptableObject使用指南</a></div></section></div>
 
 
 
@@ -294,11 +296,11 @@
   stellar.github = 'https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0';
   stellar.config = {
     date_suffix: {
-      just: 'Just',
-      min: 'minutes ago',
-      hour: 'hours ago',
-      day: 'days ago',
-      month: 'months ago',
+      just: '刚刚',
+      min: '分钟前',
+      hour: '小时前',
+      day: '天前',
+      month: '个月前',
     },
     root : '/',
   };
