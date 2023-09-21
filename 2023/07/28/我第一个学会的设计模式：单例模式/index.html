@@ -26,7 +26,7 @@
     <meta name="description" content="首次接触在跟随@阿严Gaming老师的横板卷轴飞机大战教程中，第一季接触到了单例模式，虽然不太明白实现的原理，但是感觉很好用，后来也经常在自己的个人项目中用到。   单例模式的特点​	1.单例类只能有一个实例。 ​	2.单例类必须自己创建自己的唯一实例。 ​	3.单例类必须给所有其他对象提供这一实例。 Unity中的单例就是整个场景中有且只有一个的组件：Audio Manager、Game Man">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我第一个学会的设计模式：单例模式">
-<meta property="og:url" content="https://github.com/Caromeow1/Caromeow1.github.io.git/2023/07/28/%E6%88%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%BC%9A%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:url" content="https://caromeow1.github.io/2023/07/28/%E6%88%91%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%BC%9A%E7%9A%84%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%EF%BC%9A%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/index.html">
 <meta property="og:site_name" content="Caromeow">
 <meta property="og:description" content="首次接触在跟随@阿严Gaming老师的横板卷轴飞机大战教程中，第一季接触到了单例模式，虽然不太明白实现的原理，但是感觉很好用，后来也经常在自己的个人项目中用到。   单例模式的特点​	1.单例类只能有一个实例。 ​	2.单例类必须自己创建自己的唯一实例。 ​	3.单例类必须给所有其他对象提供这一实例。 Unity中的单例就是整个场景中有且只有一个的组件：Audio Manager、Game Man">
 <meta property="og:locale" content="en_US">
@@ -50,7 +50,7 @@
 
   
     
-<link rel="stylesheet" href="/Caromeow1/Caromeow1.github.io.git/css/main.css">
+<link rel="stylesheet" href="/css/main.css">
 
   
 
@@ -76,7 +76,7 @@
 
   
 
-<header class="header"><div class="logo-wrap"><a class="title" href="/Caromeow1/Caromeow1.github.io.git/"><div class="main" ff="title">Caromeow</div></a></div>
+<header class="header"><div class="logo-wrap"><a class="title" href="/"><div class="main" ff="title">Caromeow</div></a></div>
 
 <nav class="menu dis-select"></nav>
 </header>
@@ -102,7 +102,7 @@
 
 
 
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/Caromeow1/Caromeow1.github.io.git/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/Caromeow1/Caromeow1.github.io.git/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2023-07-28T08:55:47.000Z">2023-07-28</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">Home</a><span class="sep"></span><a class="cap breadcrumb" href="/">Blog</a></div><div id="post-meta">Posted on&nbsp;<time datetime="2023-07-28T08:55:47.000Z">2023-07-28</time></div></div>
 
 <article class='md-text content post'>
 <h1 class="article-title"><span>我第一个学会的设计模式：单例模式</span></h1>
@@ -172,7 +172,7 @@
 
 </article>
 
-<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/Caromeow1/Caromeow1.github.io.git/2023/08/27/%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8D%8F%E7%A8%8B/">迭代器和协程</a></div><div class="item" id="next"><div class="note">Older</div><a href="/Caromeow1/Caromeow1.github.io.git/2023/07/28/Unity%E8%BF%9B%E9%98%B6%EF%BC%9AScriptableObject%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">Unity进阶：ScriptableObject使用指南</a></div></section></div>
+<div class="related-wrap reveal" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">Newer</div><a href="/2023/08/27/%E8%BF%AD%E4%BB%A3%E5%99%A8%E5%92%8C%E5%8D%8F%E7%A8%8B/">迭代器和协程</a></div><div class="item" id="next"><div class="note">Older</div><a href="/2023/07/28/Unity%E8%BF%9B%E9%98%B6%EF%BC%9AScriptableObject%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">Unity进阶：ScriptableObject使用指南</a></div></section></div>
 
 
 
@@ -182,7 +182,7 @@
 
 
       
-<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<footer class="page-footer reveal fs12"><hr><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
 </div></footer>
 
       <div class='float-panel mobile-only blur' style='display:none'>
@@ -299,7 +299,7 @@
       day: 'days ago',
       month: 'months ago',
     },
-    root : '/Caromeow1/Caromeow1.github.io.git/',
+    root : '/',
   };
 
   // required plugins (only load if needs)
@@ -347,7 +347,7 @@
 <!-- required -->
 
   
-<script src="/Caromeow1/Caromeow1.github.io.git/js/main.js" async></script>
+<script src="/js/main.js" async></script>
 
 
 
