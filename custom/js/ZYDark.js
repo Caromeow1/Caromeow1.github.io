@@ -16,15 +16,15 @@ OSTheme.addListener(e => {
 const ThemeChange = (theme) => {
     if (theme === 'light' || (theme === 'Moss' && !OSTheme.matches)) {
         document.querySelector("html").id = "ZYLight";
-        document.querySelector("#start > aside > footer > div > a:nth-child(6)").style.filter= 'grayscale(0%)';
-        document.querySelector("#start > aside > footer > div > a:nth-child(5)").style.filter= 'grayscale(100%)';
+        document.querySelector("#start > aside > footer > div > a:nth-child(3)").style.filter= 'grayscale(0%)';
+        document.querySelector("#start > aside > footer > div > a:nth-child(2)").style.filter= 'grayscale(100%)';
     } else {
         document.querySelector("html").id = "ZYDark";
-        document.querySelector("#start > aside > footer > div > a:nth-child(5)").style.filter= 'grayscale(0%)';
-        document.querySelector("#start > aside > footer > div > a:nth-child(6)").style.filter= 'grayscale(100%)';
+        document.querySelector("#start > aside > footer > div > a:nth-child(2)").style.filter= 'grayscale(0%)';
+        document.querySelector("#start > aside > footer > div > a:nth-child(3)").style.filter= 'grayscale(100%)';
     }
-    if (theme==='Moss'){document.querySelector("#start > aside > footer > div > a:nth-child(7)").style.filter= 'grayscale(0%)';}
-    else {document.querySelector("#start > aside > footer > div > a:nth-child(7)").style.filter= 'grayscale(100%)';}
+    if (theme==='Moss'){document.querySelector("#start > aside > footer > div > a:nth-child(4)").style.filter= 'grayscale(0%)';}
+    else {document.querySelector("#start > aside > footer > div > a:nth-child(4)").style.filter= 'grayscale(100%)';}
     window.localStorage.setItem('ZYI_Theme_Mode', theme);
 }
 /**
