@@ -57,6 +57,15 @@
     
       <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-screen-webfont/style.css" media="print" onload="this.media='all'">
     
+      <script>
+  if (window.localStorage.getItem('ZYI_Theme_Mode')==='dark' || (window.localStorage.getItem('ZYI_Theme_Mode')==='Moss' && window.matchMedia('(prefers-color-scheme: dark)').matches)){
+      document.querySelector("html").id = "ZYDark";
+  }
+</script>
+
+    
+      <link rel="stylesheet" href="/custom/css/ZYDark.css">
+    
   
 </head>
 
@@ -83,7 +92,7 @@
 
 
 </div>
-
+<footer class="footer dis-select"><div class="social-wrap"><a class="social" href="javaScript:void('永夜');" rel="noopener noreferrer"><img class="lazy" id="ThemeM" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://upyun.thatcdn.cn/public/img/icon/Moon.png"/></a><a class="social" href="javaScript:void('永昼');" rel="noopener noreferrer"><img class="lazy" id="ThemeL" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://upyun.thatcdn.cn/public/img/icon/Sun.png"/></a><a class="social" href="javaScript:void('跟随系统');" rel="noopener noreferrer"><img class="lazy" id="ThemeAI" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://upyun.thatcdn.cn/public/img/icon/AI.png"/></a></div></footer>
 
     </aside>
     <div class='l_main list'>
@@ -149,6 +158,14 @@
           <span class='name'>单例模式</span>
         </a>
       
+        <a class='tag' href="/tags/%E6%B5%8B%E8%AF%95/">
+          <span class='name'>测试</span>
+        </a>
+      
+        <a class='tag' href="/tags/%E6%AC%A3%E5%96%9C%E8%8B%A5%E7%8B%82/">
+          <span class='name'>欣喜若狂</span>
+        </a>
+      
         <a class='tag' href="/tags/C-%E5%9F%BA%E7%A1%80/">
           <span class='name'>C#基础</span>
         </a>
@@ -159,14 +176,6 @@
       
         <a class='tag' href="/tags/%E6%8E%92%E5%BA%8F/">
           <span class='name'>排序</span>
-        </a>
-      
-        <a class='tag' href="/tags/%E6%B5%8B%E8%AF%95/">
-          <span class='name'>测试</span>
-        </a>
-      
-        <a class='tag' href="/tags/%E6%AC%A3%E5%96%9C%E8%8B%A5%E7%8B%82/">
-          <span class='name'>欣喜若狂</span>
         </a>
       
         <a class='tag' href="/tags/%E5%AF%B9%E8%B1%A1%E6%B1%A0/">
@@ -360,6 +369,10 @@
 
 
 <!-- inject -->
+
+  
+    <script type="text/javascript" src="/custom/js/ZYDark.js"></script>
+  
 
 
   </div>
