@@ -23,16 +23,16 @@
   <title>初学有限状态机 - Caromeow</title>
 
   
-    <meta name="description" content="想象一下想象一个场景，你有一个ARPG游戏里的角色，你的角色有很多骚气的动作：蹬墙跳、滑铲、二段跳、滑翔、过肩摔、格挡反击、咸鱼冲刺、吹口哨…… 但是，你的角色并不能在滑铲的时候使出咸鱼冲刺，在滑翔的时候对着敌人使出过肩摔，在挨打的时候对着怪吹口哨，否则其他看到的玩家就会直呼：卧槽，有挂 如果你是Unity菜鸟，你会怎样设计角色控制代码呢，正好我就是菜鸟，我会告诉你应该这样做：声明一溜布尔值来判断">
+    <meta name="description" content="想象一下 想象一个场景，你有一个ARPG游戏里的角色，你的角色有很多骚气的动作：蹬墙跳、滑铲、二段跳、滑翔、过肩摔、格挡反击、咸鱼冲刺、吹口哨…… 但是，你的角色并不能在滑铲的时候使出咸鱼冲刺，在滑翔的时候对着敌人使出过肩摔，在挨打的时候对着怪吹口哨，否则其他看到的玩家就会直呼：卧槽，有挂 如果你是Unity菜鸟，你会怎样设计角色控制代码呢，正好我就是菜鸟，我会告诉你应该这样做：声明一溜布尔值来判">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初学有限状态机">
 <meta property="og:url" content="https://caromeow1.github.io/2023/09/03/%E5%88%9D%E5%AD%A6%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/index.html">
 <meta property="og:site_name" content="Caromeow">
-<meta property="og:description" content="想象一下想象一个场景，你有一个ARPG游戏里的角色，你的角色有很多骚气的动作：蹬墙跳、滑铲、二段跳、滑翔、过肩摔、格挡反击、咸鱼冲刺、吹口哨…… 但是，你的角色并不能在滑铲的时候使出咸鱼冲刺，在滑翔的时候对着敌人使出过肩摔，在挨打的时候对着怪吹口哨，否则其他看到的玩家就会直呼：卧槽，有挂 如果你是Unity菜鸟，你会怎样设计角色控制代码呢，正好我就是菜鸟，我会告诉你应该这样做：声明一溜布尔值来判断">
+<meta property="og:description" content="想象一下 想象一个场景，你有一个ARPG游戏里的角色，你的角色有很多骚气的动作：蹬墙跳、滑铲、二段跳、滑翔、过肩摔、格挡反击、咸鱼冲刺、吹口哨…… 但是，你的角色并不能在滑铲的时候使出咸鱼冲刺，在滑翔的时候对着敌人使出过肩摔，在挨打的时候对着怪吹口哨，否则其他看到的玩家就会直呼：卧槽，有挂 如果你是Unity菜鸟，你会怎样设计角色控制代码呢，正好我就是菜鸟，我会告诉你应该这样做：声明一溜布尔值来判">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://caromeow1.github.io/2023/09/03/%E5%88%9D%E5%AD%A6%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA/1.png">
 <meta property="article:published_time" content="2023-09-03T01:30:32.000Z">
-<meta property="article:modified_time" content="2023-09-03T05:45:33.918Z">
+<meta property="article:modified_time" content="2023-09-24T07:11:13.996Z">
 <meta property="article:author" content="Caromeow">
 <meta property="article:tag" content="Unity">
 <meta property="article:tag" content="learn">
@@ -93,7 +93,7 @@
 <widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
 
-<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">初学有限状态机</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%83%B3%E8%B1%A1%E4%B8%80%E4%B8%8B"><span class="toc-text">想象一下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="toc-text">一个有限状态机</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="toc-text">构建有限状态机</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E6%9C%BA%E7%AE%A1%E7%90%86%E5%99%A8%E7%B1%BB"><span class="toc-text">状态机管理器类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%9A%84%E5%9F%BA%E7%B1%BB"><span class="toc-text">状态的基类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8D%95%E4%B8%AA%E7%8A%B6%E6%80%81%E7%B1%BB"><span class="toc-text">单个状态类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E5%AF%B9%E8%B1%A1%E7%B1%BB"><span class="toc-text">角色对象类</span></a></li></ol></li></ol></div></div></widget>
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">初学有限状态机</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%83%B3%E8%B1%A1%E4%B8%80%E4%B8%8B"><span class="toc-text">想象一下</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E4%B8%AA%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="toc-text">一个有限状态机</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9E%84%E5%BB%BA%E6%9C%89%E9%99%90%E7%8A%B6%E6%80%81%E6%9C%BA"><span class="toc-text">构建有限状态机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E6%9C%BA%E7%AE%A1%E7%90%86%E5%99%A8%E7%B1%BB"><span class="toc-text">状态机管理器类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81%E7%9A%84%E5%9F%BA%E7%B1%BB"><span class="toc-text">状态的基类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E4%B8%AA%E7%8A%B6%E6%80%81%E7%B1%BB"><span class="toc-text">单个状态类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E5%AF%B9%E8%B1%A1%E7%B1%BB"><span class="toc-text">角色对象类</span></a></li></ol></li></ol></div></div></widget>
 
 
 
@@ -113,7 +113,8 @@
 
 <article class='md-text content post'>
 <h1 class="article-title"><span>初学有限状态机</span></h1>
-<h3 id="想象一下"><a href="#想象一下" class="headerlink" title="想象一下"></a>想象一下</h3><p>想象一个场景，你有一个ARPG游戏里的角色，你的角色有很多骚气的动作：蹬墙跳、滑铲、二段跳、滑翔、过肩摔、格挡反击、咸鱼冲刺、吹口哨……</p>
+<h2 id="想象一下"><a href="#想象一下" class="headerlink" title="想象一下"></a>想象一下</h2><hr>
+<p>想象一个场景，你有一个ARPG游戏里的角色，你的角色有很多骚气的动作：蹬墙跳、滑铲、二段跳、滑翔、过肩摔、格挡反击、咸鱼冲刺、吹口哨……</p>
 <p>但是，你的角色并不能在滑铲的时候使出咸鱼冲刺，在滑翔的时候对着敌人使出过肩摔，在挨打的时候对着怪吹口哨，否则其他看到的玩家就会直呼：卧槽，有挂</p>
 <p>如果你是Unity菜鸟，你会怎样设计角色控制代码呢，正好我就是菜鸟，我会告诉你应该这样做：声明一溜布尔值来判断角色所处的状态</p>
 <figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">bool</span> isGround;<span class="comment">// 在地面上</span></span><br><span class="line"><span class="built_in">bool</span> isHuaXiang;<span class="comment">// 正在滑翔</span></span><br><span class="line"><span class="built_in">bool</span> isHurt;<span class="comment">// 正在挨打</span></span><br><span class="line">……</span><br></pre></td></tr></table></figure>
@@ -122,19 +123,20 @@
 <figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(!isHurt)</span><br><span class="line">	ChuiKouShao();<span class="comment">// 如果角色没有在挨打，就对着怪吹口哨嘲讽</span></span><br></pre></td></tr></table></figure>
 
 <p>当然，学过有限状态机的你对着我的嘴就是一巴掌：如果角色的状态和行为不断变得复杂，慢慢的，你会创建114514个条件变量，慢慢的，if层级会越来越多。。然后你交给了我一个新的方法——有限状态机：</p>
-<hr>
-<h3 id="一个有限状态机"><a href="#一个有限状态机" class="headerlink" title="一个有限状态机"></a>一个有限状态机</h3><p>FSM，有限状态机，可以枚举出有限多个状态，当满足特定的条件时可以在这些条件中来回切换</p>
+<h2 id="一个有限状态机"><a href="#一个有限状态机" class="headerlink" title="一个有限状态机"></a>一个有限状态机</h2><hr>
+<p>FSM，有限状态机，可以枚举出有限多个状态，当满足特定的条件时可以在这些条件中来回切换</p>
 <p>比如游戏中的敌人AI，正常情况下敌人会在特定的路线上来回走动进行巡逻，当玩家发出动静或者首次进入视野时会警觉，这时候玩家再次发出动静或者暴露在视野中敌人就会追击玩家，直到玩家消失在视野中</p>
 <p>Unity当中的Animator就是一个FSM：</p>
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="1.png" alt="Animator"/></div><div class="image-meta"><span class="image-caption center">Animator</span></div></div>
 
 <p>只不过每个状态里存放的是动画，我们的FSM也会沿用这个思想，只不过状态里存放的是逻辑代码</p>
 <p>FSM可以说是一个强化版的 switch case ，判断处于哪个状态，执行对应的逻辑，FSM可以很方便地进行扩展，加入新状态只需继承基类，不用修改原来的代码</p>
-<h3 id="构建有限状态机"><a href="#构建有限状态机" class="headerlink" title="构建有限状态机"></a>构建有限状态机</h3><h4 id="状态机管理器类"><a href="#状态机管理器类" class="headerlink" title="状态机管理器类"></a>状态机管理器类</h4><p>用来记录与统一所有状态</p>
-<h4 id="状态的基类"><a href="#状态的基类" class="headerlink" title="状态的基类"></a>状态的基类</h4><p>抽象类，只能被继承。所有状态都具有的共同行为</p>
+<h2 id="构建有限状态机"><a href="#构建有限状态机" class="headerlink" title="构建有限状态机"></a>构建有限状态机</h2><hr>
+<h3 id="状态机管理器类"><a href="#状态机管理器类" class="headerlink" title="状态机管理器类"></a>状态机管理器类</h3><p>用来记录与统一所有状态</p>
+<h3 id="状态的基类"><a href="#状态的基类" class="headerlink" title="状态的基类"></a>状态的基类</h3><p>抽象类，只能被继承。所有状态都具有的共同行为</p>
 <p>OnEnter、OnUpdate、OnExit</p>
-<h4 id="单个状态类"><a href="#单个状态类" class="headerlink" title="单个状态类"></a>单个状态类</h4><p>每个状态单独一个类，存放这个状态拥有的逻辑代码，继承于状态基类</p>
-<h4 id="角色对象类"><a href="#角色对象类" class="headerlink" title="角色对象类"></a>角色对象类</h4><p>创建StateMachineManager类的实例，每个角色都有自己专属的状态机，因此StateMachineManager类不能是抽象类</p>
+<h3 id="单个状态类"><a href="#单个状态类" class="headerlink" title="单个状态类"></a>单个状态类</h3><p>每个状态单独一个类，存放这个状态拥有的逻辑代码，继承于状态基类</p>
+<h3 id="角色对象类"><a href="#角色对象类" class="headerlink" title="角色对象类"></a>角色对象类</h3><p>创建StateMachineManager类的实例，每个角色都有自己专属的状态机，因此StateMachineManager类不能是抽象类</p>
 
 
 
