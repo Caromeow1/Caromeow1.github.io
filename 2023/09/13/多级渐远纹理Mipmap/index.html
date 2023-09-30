@@ -23,12 +23,12 @@
   <title>多级渐远纹理Mipmap - Caromeow</title>
 
   
-    <meta name="description" content="百度百科MIP来源于拉丁文中的multum in parvo，意为在一个小空间里的多数。MIP map技术与材质贴图技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状图">
+    <meta name="description" content="百度百科 MIP来源于拉丁文中的multum in parvo，意为在一个小空间里的多数。MIP map技术与材质贴图技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多级渐远纹理Mipmap">
 <meta property="og:url" content="https://caromeow1.github.io/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/index.html">
 <meta property="og:site_name" content="Caromeow">
-<meta property="og:description" content="百度百科MIP来源于拉丁文中的multum in parvo，意为在一个小空间里的多数。MIP map技术与材质贴图技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状图">
+<meta property="og:description" content="百度百科 MIP来源于拉丁文中的multum in parvo，意为在一个小空间里的多数。MIP map技术与材质贴图技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://caromeow1.github.io/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/1.png">
 <meta property="og:image" content="https://caromeow1.github.io/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/2.png">
@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://caromeow1.github.io/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/5.jpg">
 <meta property="og:image" content="https://caromeow1.github.io/2023/09/13/%E5%A4%9A%E7%BA%A7%E6%B8%90%E8%BF%9C%E7%BA%B9%E7%90%86Mipmap/6.gif">
 <meta property="article:published_time" content="2023-09-13T08:27:48.000Z">
-<meta property="article:modified_time" content="2023-09-17T07:45:53.055Z">
+<meta property="article:modified_time" content="2023-09-28T06:11:33.261Z">
 <meta property="article:author" content="Caromeow">
 <meta property="article:tag" content="Mipmap">
 <meta name="twitter:card" content="summary">
@@ -116,9 +116,10 @@
 
 <article class='md-text content post'>
 <h1 class="article-title"><span>多级渐远纹理Mipmap</span></h1>
-<h3 id="百度百科"><a href="#百度百科" class="headerlink" title="百度百科"></a>百度百科</h3><p>MIP来源于<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%8B%89%E4%B8%81%E6%96%87/360796?fromModule=lemma_inlink">拉丁文</a>中的multum in parvo，意为在一个小空间里的多数。MIP map技术与<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9D%90%E8%B4%A8%E8%B4%B4%E5%9B%BE/7556421?fromModule=lemma_inlink">材质贴图</a>技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状图形）在图像中出现，这种锯齿状图形可能是由于在不同分辨率下使用bit map图像产生的。</p>
-<hr>
-<h3 id="先了解纹理过滤"><a href="#先了解纹理过滤" class="headerlink" title="先了解纹理过滤"></a>先了解纹理过滤</h3><p>想要了解为什么要使用Mipmap，首先要知道纹理过滤是什么。</p>
+<h3 id="百度百科"><a href="#百度百科" class="headerlink" title="百度百科"></a>百度百科</h3><hr>
+<p>MIP来源于<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%8B%89%E4%B8%81%E6%96%87/360796?fromModule=lemma_inlink">拉丁文</a>中的multum in parvo，意为在一个小空间里的多数。MIP map技术与<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%9D%90%E8%B4%A8%E8%B4%B4%E5%9B%BE/7556421?fromModule=lemma_inlink">材质贴图</a>技术结合，根据距观看者远近距离的不同，以不同的分辨率将单一的材质贴图以多重图像的形式表现出来并代表平面纹理：尺寸最大的图像放在前面显著的位置，而相对较小的图像则后退到背景区域。每一个不同的尺寸等级定义成一个MIP map水平。MIP map技术帮助避免了不想要的锯齿边缘（称为锯齿状图形）在图像中出现，这种锯齿状图形可能是由于在不同分辨率下使用bit map图像产生的。</p>
+<h3 id="先了解纹理过滤"><a href="#先了解纹理过滤" class="headerlink" title="先了解纹理过滤"></a>先了解纹理过滤</h3><hr>
+<p>想要了解为什么要使用Mipmap，首先要知道纹理过滤是什么。</p>
 <p>当你在玩吃鸡的时候可能会发现一个现象，一个人在距离你5米的地方，可以观察到敌人的一举一动，包括身上的装备等等，但当你拿到98k时，你会蹲在远处狙击别人，这时不开镜的你看500米远处的敌人只能看到一个黑点，这其中远近看到的区别就有应用到纹理过滤。</p>
 <p>游戏中A物体的游戏设计纹理贴图是400*400Texel(纹理像素)</p>
 <p>1.当你(摄像机)跟A物体的距离为0时，在你屏幕上显示的像素就是400*400，跟贴图的纹理像素大小相同，此时不需要做特殊处理</p>
@@ -130,10 +131,10 @@
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="2.png" alt="线性过滤"/></div><div class="image-meta"><span class="image-caption center">线性过滤</span></div></div>
 
 <p>那么这两种纹理过滤方式有怎样的视觉效果呢？让我们看看在一个很大的物体上应用一张低分辨率的纹理会发生什么吧（纹理被放大了，每个纹理像素都能看到）：</p>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="3.png"/></div></div>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="3.png" alt="左为临近过滤，右为线性过滤"/></div><div class="image-meta"><span class="image-caption center">左为临近过滤，右为线性过滤</span></div></div>
 
-<hr>
-<h3 id="当距离很远的时候怎么算"><a href="#当距离很远的时候怎么算" class="headerlink" title="当距离很远的时候怎么算"></a>当距离很远的时候怎么算</h3><p>此时的你来到远离市区500米的山上，想要狙击别人，你只能看到一个个很小的人影，在不开镜的情况下只能看到人的跑动。</p>
+<h3 id="当距离很远的时候怎么算"><a href="#当距离很远的时候怎么算" class="headerlink" title="当距离很远的时候怎么算"></a>当距离很远的时候怎么算</h3><hr>
+<p>此时的你来到远离市区500米的山上，想要狙击别人，你只能看到一个个很小的人影，在不开镜的情况下只能看到人的跑动。</p>
 <p>此时敌人在屏幕显示为20<em>20，400</em>400的纹理像素映射在20<em>20的像素内，一颗像素需要映射20</em>20的纹理像素，如果直接进行纹理过滤，那么在使用线性过滤的情况下，只会使用纹理坐标映射点的周围4颗纹理像素进行计算，那么其他的396颗纹理像素就没了参考价值，考虑极端情况下，如果纹理坐标映射点在人的头发，那么不就只是显示黑色了？ ，那么在最终的显示效果上可能会产生锯齿或者摩尔纹，摩尔纹长这样：</p>
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="4.jpg" alt="摩尔纹"/></div><div class="image-meta"><span class="image-caption center">摩尔纹</span></div></div>
 
@@ -142,11 +143,11 @@
 <p>采样所有纹理像素进行纹理过滤：1FPS,渲染一个物体每颗像素的颜色需要采样计算400个纹理像素的插值。</p>
 <p>可以想象性能换质量的消耗实在太大，在如今的GPU算力下是施行不了的.</p>
 <p>那有办法不损耗算力，又可以提升显示质量吗？可以，使用Mipmap.</p>
-<hr>
-<h3 id="Mipmap概念"><a href="#Mipmap概念" class="headerlink" title="Mipmap概念"></a>Mipmap概念</h3><p>想象一下，假设我们有一个包含着上千物体的大房间，每个物体上都有纹理。有些物体会很远，但其纹理会拥有与近处物体同样高的分辨率。由于远处的物体可能只产生很少的片段，OpenGL从高分辨率纹理中为这些片段获取正确的颜色值就很困难，因为它需要对一个跨过纹理很大部分的片段只拾取一个纹理颜色。在小物体上这会产生不真实的感觉，更不用说对它们使用高分辨率纹理浪费内存的问题了。</p>
+<h3 id="Mipmap概念"><a href="#Mipmap概念" class="headerlink" title="Mipmap概念"></a>Mipmap概念</h3><hr>
+<p>想象一下，假设我们有一个包含着上千物体的大房间，每个物体上都有纹理。有些物体会很远，但其纹理会拥有与近处物体同样高的分辨率。由于远处的物体可能只产生很少的片段，OpenGL从高分辨率纹理中为这些片段获取正确的颜色值就很困难，因为它需要对一个跨过纹理很大部分的片段只拾取一个纹理颜色。在小物体上这会产生不真实的感觉，更不用说对它们使用高分辨率纹理浪费内存的问题了。</p>
 <p>OpenGL使用一种叫做多级渐远纹理(Mipmap)的概念来解决这个问题，它简单来说就是一系列的纹理图像，后一个纹理图像是前一个的二分之一。多级渐远纹理背后的理念很简单：距观察者的距离超过一定的阈值，OpenGL会使用不同的多级渐远纹理，即最适合物体的距离的那个。由于距离远，解析度不高也不会被用户注意到。同时，多级渐远纹理另一加分之处是它的性能非常好。</p>
-<hr>
-<h3 id="Mipmap效果"><a href="#Mipmap效果" class="headerlink" title="Mipmap效果"></a>Mipmap效果</h3><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="5.jpg" alt="Mipmap"/></div><div class="image-meta"><span class="image-caption center">Mipmap</span></div></div>
+<h3 id="Mipmap效果"><a href="#Mipmap效果" class="headerlink" title="Mipmap效果"></a>Mipmap效果</h3><hr>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="5.jpg" alt="Mipmap"/></div><div class="image-meta"><span class="image-caption center">Mipmap</span></div></div>
 
 <p>上图是Mipmap的纹理，在储存上最大的为mipmap0，mipmap1的分辨率为mipmap0的一半,以此一直创建下去，直到纹理为一个像素时停止，在某些引擎中可以设置Mipmap的强弱，也就是Mipmap的创建次数。但一般直接拉到最强，因为越到后面创建的大小越小，占用的内存也就越小。</p>
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="6.gif" alt="Mipmap效果"/></div><div class="image-meta"><span class="image-caption center">Mipmap效果</span></div></div>
@@ -180,8 +181,8 @@
 <td>在两个邻近的多级渐远纹理之间使用线性插值，并使用线性插值进行采样</td>
 </tr>
 </tbody></table>
-<hr>
-<h3 id="Mipmap的优点与缺点"><a href="#Mipmap的优点与缺点" class="headerlink" title="Mipmap的优点与缺点"></a>Mipmap的优点与缺点</h3><p><strong>优点:</strong><br>1.质量高：避免了在远距离情况下的采样频率低和数据频率高造成的失真和摩尔纹，效果比无Mipmap好得多。</p>
+<h3 id="Mipmap的优点与缺点"><a href="#Mipmap的优点与缺点" class="headerlink" title="Mipmap的优点与缺点"></a>Mipmap的优点与缺点</h3><hr>
+<p><strong>优点:</strong><br>1.质量高：避免了在远距离情况下的采样频率低和数据频率高造成的失真和摩尔纹，效果比无Mipmap好得多。</p>
 <p>2.性能好：避免了不使用Mipmap下距离远时采样频率低和数据频率高而照成texture cache命中率不高(相邻Pixel采样Texel时uv相差比较大)使性能下降。</p>
 <p><strong>缺点：</strong><br>1.占用显存，可使用ue的纹理流缓存优化（IO换显存）。</p>
 <hr>
