@@ -45,7 +45,7 @@
 <meta property="og:image" content="https://caromeow1.github.io/2023/09/13/Unity%EF%BC%9AUGUI%E5%9F%BA%E7%A1%80/14.png">
 <meta property="og:image" content="https://caromeow1.github.io/2023/09/13/Unity%EF%BC%9AUGUI%E5%9F%BA%E7%A1%80/15.png">
 <meta property="article:published_time" content="2023-09-13T10:02:38.000Z">
-<meta property="article:modified_time" content="2023-10-04T05:24:10.372Z">
+<meta property="article:modified_time" content="2023-10-04T05:30:54.782Z">
 <meta property="article:author" content="Caromeow">
 <meta property="article:tag" content="Unity">
 <meta property="article:tag" content="UGUI">
@@ -105,7 +105,7 @@
 <widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" data-filter="/blog/" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
 
-<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">Unity：UGUI基础</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas%E4%B8%8E%E4%B8%89%E7%A7%8D%E7%94%BB%E5%B8%83%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F"><span class="toc-text">Canvas与三种画布渲染模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Canvas%E7%AE%80%E4%BB%8B"><span class="toc-text">Canvas简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Canvas%E7%94%BB%E5%B8%83%E5%8F%82%E6%95%B0-RenderMode"><span class="toc-text">Canvas画布参数 RenderMode</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#Screen-Space-Overlay%E6%A8%A1%E5%BC%8F"><span class="toc-text">Screen Space-Overlay模式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#Screen-Space-Camera%E6%A8%A1%E5%BC%8F"><span class="toc-text">Screen Space-Camera模式</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#World-Space%E6%A8%A1%E5%BC%8F"><span class="toc-text">World Space模式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BFUI%E8%B7%9F%E9%9A%8F%E5%B1%8F%E5%B9%95%E5%88%86%E8%BE%A8%E7%8E%87%E5%8F%98%E5%8C%96%E8%87%AA%E9%80%82%E5%BA%94"><span class="toc-text">使UI跟随屏幕分辨率变化自适应</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81UI%E8%87%AA%E9%80%82%E5%BA%94"><span class="toc-text">为什么需要UI自适应</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E3%80%81Constant-Pixel-Size"><span class="toc-text">一、Constant Pixel Size</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Scale-With-Screen-Size"><span class="toc-text">二、Scale With Screen Size</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%89%E3%80%81Constant-Physical-Size"><span class="toc-text">三、Constant Physical Size</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E6%BC%94%E7%A4%BA"><span class="toc-text">实例演示</span></a></li></ol></div></div></widget>
+<widget class="widget-wrapper toc single" id="data-toc"><div class="widget-header cap dis-select"><span class="name">Unity：UGUI基础</span></div><div class="widget-body fs14"><div class="doc-tree active"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Canvas%E4%B8%8E%E4%B8%89%E7%A7%8D%E7%94%BB%E5%B8%83%E6%B8%B2%E6%9F%93%E6%A8%A1%E5%BC%8F"><span class="toc-text">Canvas与三种画布渲染模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas%E7%AE%80%E4%BB%8B"><span class="toc-text">Canvas简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Canvas%E7%94%BB%E5%B8%83%E5%8F%82%E6%95%B0-RenderMode"><span class="toc-text">Canvas画布参数 RenderMode</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Screen-Space-Overlay%E6%A8%A1%E5%BC%8F"><span class="toc-text">Screen Space-Overlay模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Screen-Space-Camera%E6%A8%A1%E5%BC%8F"><span class="toc-text">Screen Space-Camera模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#World-Space%E6%A8%A1%E5%BC%8F"><span class="toc-text">World Space模式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BFUI%E8%B7%9F%E9%9A%8F%E5%B1%8F%E5%B9%95%E5%88%86%E8%BE%A8%E7%8E%87%E5%8F%98%E5%8C%96%E8%87%AA%E9%80%82%E5%BA%94"><span class="toc-text">使UI跟随屏幕分辨率变化自适应</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E9%9C%80%E8%A6%81UI%E8%87%AA%E9%80%82%E5%BA%94"><span class="toc-text">为什么需要UI自适应</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%80%E3%80%81Constant-Pixel-Size"><span class="toc-text">一、Constant Pixel Size</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BA%8C%E3%80%81Scale-With-Screen-Size"><span class="toc-text">二、Scale With Screen Size</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81Constant-Physical-Size"><span class="toc-text">三、Constant Physical Size</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E4%BE%8B%E6%BC%94%E7%A4%BA"><span class="toc-text">实例演示</span></a></li></ol></div></div></widget>
 
 
 
@@ -125,28 +125,27 @@
 
 <article class='md-text content post'>
 <h1 class="article-title"><span>Unity：UGUI基础</span></h1>
-<h3 id="Canvas与三种画布渲染模式"><a href="#Canvas与三种画布渲染模式" class="headerlink" title="Canvas与三种画布渲染模式"></a>Canvas与三种画布渲染模式</h3><hr>
-<h4 id="Canvas简介"><a href="#Canvas简介" class="headerlink" title="Canvas简介"></a>Canvas简介</h4><p>Canvas画布是承载所有UI元素的区域。Canvas实际上是一个挂载着Canvas组件的游戏对象。所有的UI元素都必须是Canvas的子对象。我们创建任何一个UI元素时，如果场景中没有Canvas画布，就会自动创建画布，并且将新元素置于其下。</p>
-<h4 id="Canvas画布参数-RenderMode"><a href="#Canvas画布参数-RenderMode" class="headerlink" title="Canvas画布参数 RenderMode"></a>Canvas画布参数 RenderMode</h4><h5 id="Screen-Space-Overlay模式"><a href="#Screen-Space-Overlay模式" class="headerlink" title="Screen Space-Overlay模式"></a>Screen Space-Overlay模式</h5><p><strong>Screen Space-Overlay（屏幕空间-覆盖）</strong>的画布会填满整个屏幕空间，并将画布下面的所有的UI元素置于屏幕的最上层，或者说画布的画面永远“覆盖”其他普通的3D画面，如果屏幕尺寸被改变，画布将自动改变尺寸来匹配屏幕，如下图效果：</p>
-<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="1.png"/></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="2.png"/></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="3.png"/></div></div>
+<h2 id="Canvas与三种画布渲染模式"><a href="#Canvas与三种画布渲染模式" class="headerlink" title="Canvas与三种画布渲染模式"></a>Canvas与三种画布渲染模式</h2><hr>
+<h3 id="Canvas简介"><a href="#Canvas简介" class="headerlink" title="Canvas简介"></a>Canvas简介</h3><p>Canvas画布是承载所有UI元素的区域。Canvas实际上是一个挂载着Canvas组件的游戏对象。所有的UI元素都必须是Canvas的子对象。我们创建任何一个UI元素时，如果场景中没有Canvas画布，就会自动创建画布，并且将新元素置于其下。</p>
+<h3 id="Canvas画布参数-RenderMode"><a href="#Canvas画布参数-RenderMode" class="headerlink" title="Canvas画布参数 RenderMode"></a>Canvas画布参数 RenderMode</h3><h4 id="Screen-Space-Overlay模式"><a href="#Screen-Space-Overlay模式" class="headerlink" title="Screen Space-Overlay模式"></a>Screen Space-Overlay模式</h4><p><strong>Screen Space-Overlay（屏幕空间-覆盖）</strong>的画布会填满整个屏幕空间，并将画布下面的所有的UI元素置于屏幕的最上层，或者说画布的画面永远“覆盖”其他普通的3D画面，如果屏幕尺寸被改变，画布将自动改变尺寸来匹配屏幕，如下图效果：</p>
+<div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="1.png"/></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="2.png"/></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="3.png" alt="在此模式下，虽然在Canvas前放置了3D人物，但是在Game窗口中并不能观察到3D人物"/></div><div class="image-meta"><span class="image-caption center">在此模式下，虽然在Canvas前放置了3D人物，但是在Game窗口中并不能观察到3D人物</span></div></div>
 
-<p>（在此模式下，虽然在Canvas前放置了3D人物，但是在Game窗口中并不能观察到3D人物）</p>
 <p>Screen Space-Overlay模式的画布有 <strong>Pixel Perfect</strong> 和 <strong>Sort Layer</strong> 两个参数：</p>
-<p>　　（1）<strong>Pixel Perfect：</strong>只有RenderMode为Screen类型时才有的选项。使UI元素像素对应，效果就是边缘清晰不模糊。</p>
-<p>　　（2）<strong>Sort Layer:</strong> Sort Layer是UGUI专用的设置，用来指示画布的深度。</p>
-<h5 id="Screen-Space-Camera模式"><a href="#Screen-Space-Camera模式" class="headerlink" title="Screen Space-Camera模式"></a>Screen Space-Camera模式</h5><p>　　<strong>Screen Space-Camera（屏幕空间-摄影机模式）</strong>和Screen Space-Overlay模式类似，画布也是填满整个屏幕空间，如果屏幕尺寸改变，画布也会自动改变尺寸来匹配屏幕。所不同的是，在该模式下，画布会被放置到摄影机前方。在这种渲染模式下，画布看起来 绘制在一个与摄影机固定距离的平面上。所有的UI元素都由该摄影机渲染，因此摄影机的设置会影响到UI画面。在此模式下，UI元素是由perspective也就是视角设定的，视角广度由Filed of View设置。</p>
-<p>　　这种模式可以用来实现在UI上显示3D模型的需求，比如很多MMO游戏中的查看人物装备的界面，可能屏幕的左侧有一个运动的3D人物，左侧是一些UI元素。通过设置Screen Space-Camera模式就可以实现上述的需求，效果如下图所示：</p>
+<p>（1）<strong>Pixel Perfect：</strong>只有RenderMode为Screen类型时才有的选项。使UI元素像素对应，效果就是边缘清晰不模糊。</p>
+<p>（2）<strong>Sort Layer:</strong> Sort Layer是UGUI专用的设置，用来指示画布的深度。</p>
+<h4 id="Screen-Space-Camera模式"><a href="#Screen-Space-Camera模式" class="headerlink" title="Screen Space-Camera模式"></a>Screen Space-Camera模式</h4><p><strong>Screen Space-Camera（屏幕空间-摄影机模式）</strong>和Screen Space-Overlay模式类似，画布也是填满整个屏幕空间，如果屏幕尺寸改变，画布也会自动改变尺寸来匹配屏幕。所不同的是，在该模式下，画布会被放置到摄影机前方。在这种渲染模式下，画布看起来 绘制在一个与摄影机固定距离的平面上。所有的UI元素都由该摄影机渲染，因此摄影机的设置会影响到UI画面。在此模式下，UI元素是由perspective也就是视角设定的，视角广度由Filed of View设置。</p>
+<p>这种模式可以用来实现在UI上显示3D模型的需求，比如很多MMO游戏中的查看人物装备的界面，可能屏幕的左侧有一个运动的3D人物，左侧是一些UI元素。通过设置Screen Space-Camera模式就可以实现上述的需求，效果如下图所示：</p>
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="4.png"/></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="5.png"/></div></div>
 
 <p>它比Screen Space-Overlay模式的画布多了下面几个参数：</p>
-<p>　　（1）<strong>Render Camera：</strong>渲染摄像机</p>
-<p>　　（2）<strong>Plane Distance：</strong>画布距离摄像机的距离</p>
-<p>　　（3）<strong>Sorting Layer：</strong>Sorting Layer是UGUI专用的设置，用来指示画布的深度。可以通过点击该栏的选项，在下拉菜单中点击“Add Sorting Layer”按钮进入标签和层的设置界面，或者点击导航菜单-&gt;edit-&gt;Project Settings-&gt;Tags and Layers进入该页面。</p>
-<p>　　　　可以点击“+”添加Layer，或者点击“-”删除Layer。画布所使用的Sorting Layer越排在下面，显示的优先级也就越高。</p>
-<p>　　（4）Order in Layer:在相同的Sort Layer下的画布显示先后顺序。数字越高，显示的优先级也就越高。</p>
-<h5 id="World-Space模式"><a href="#World-Space模式" class="headerlink" title="World Space模式"></a>World Space模式</h5><p>　　World Space即世界控件模式。在此模式下，画布被视为与场景中其他普通游戏对象性质相同的类似于一张面片（Plane）的游戏物体。画布的尺寸可以通过RectTransform设置，所有的UI元素可能位于普通3D物体的前面或者后面显示。当UI为场景的一部分时， 　　可以使用这个模式。</p>
-<p>　　它有一个单独的参数Event Camera，用来指定接受事件的摄像机，可以通过画布上的GraphicRaycaster组件发射射线产生事件。</p>
-<p>　　这种模式可以用来实现跟随人物移动的血条或者名称，如下图所示：</p>
+<p>（1）<strong>Render Camera：</strong>渲染摄像机</p>
+<p>（2）<strong>Plane Distance：</strong>画布距离摄像机的距离</p>
+<p>（3）<strong>Sorting Layer：</strong>Sorting Layer是UGUI专用的设置，用来指示画布的深度。可以通过点击该栏的选项，在下拉菜单中点击“Add Sorting Layer”按钮进入标签和层的设置界面，或者点击导航菜单-&gt;edit-&gt;Project Settings-&gt;Tags and Layers进入该页面。</p>
+<p>可以点击“+”添加Layer，或者点击“-”删除Layer。画布所使用的Sorting Layer越排在下面，显示的优先级也就越高。</p>
+<p>（4）Order in Layer:在相同的Sort Layer下的画布显示先后顺序。数字越高，显示的优先级也就越高。</p>
+<h4 id="World-Space模式"><a href="#World-Space模式" class="headerlink" title="World Space模式"></a>World Space模式</h4><p>World Space即世界控件模式。在此模式下，画布被视为与场景中其他普通游戏对象性质相同的类似于一张面片（Plane）的游戏物体。画布的尺寸可以通过RectTransform设置，所有的UI元素可能位于普通3D物体的前面或者后面显示。当UI为场景的一部分时， 　　可以使用这个模式。</p>
+<p>它有一个单独的参数Event Camera，用来指定接受事件的摄像机，可以通过画布上的GraphicRaycaster组件发射射线产生事件。</p>
+<p>这种模式可以用来实现跟随人物移动的血条或者名称，如下图所示：</p>
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="6.png"/></div></div><div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="7.png"/></div></div>
 
 <p>我们通过下面的表格可以对比一下三种渲染模式的区别：</p>
@@ -182,15 +181,15 @@
 <td>3D UI</td>
 </tr>
 </tbody></table>
-<h3 id="使UI跟随屏幕分辨率变化自适应"><a href="#使UI跟随屏幕分辨率变化自适应" class="headerlink" title="使UI跟随屏幕分辨率变化自适应"></a>使UI跟随屏幕分辨率变化自适应</h3><hr>
-<h4 id="为什么需要UI自适应"><a href="#为什么需要UI自适应" class="headerlink" title="为什么需要UI自适应"></a>为什么需要UI自适应</h4><ul>
+<h2 id="使UI跟随屏幕分辨率变化自适应"><a href="#使UI跟随屏幕分辨率变化自适应" class="headerlink" title="使UI跟随屏幕分辨率变化自适应"></a>使UI跟随屏幕分辨率变化自适应</h2><hr>
+<h3 id="为什么需要UI自适应"><a href="#为什么需要UI自适应" class="headerlink" title="为什么需要UI自适应"></a>为什么需要UI自适应</h3><ul>
 <li>场景1：手机需要再竖屏与横屏之间切换，这样适应竖屏的UI元素的位置，未必适应横屏</li>
 <li>场景2：即使都采用横屏模式，手机的横纵比不同，有的是2140x1080，有的是2400x1080，有的是1920x1080，等等…</li>
 <li>场景3：即使都采用相同横纵比，但屏幕分辨率不同，例如：1920x1080与2560x1440</li>
 </ul>
 <p><strong>Canvas Scaler 组件中的参数：UI Scale Mode</strong></p>
-<h5 id="一、Constant-Pixel-Size"><a href="#一、Constant-Pixel-Size" class="headerlink" title="一、Constant Pixel Size"></a>一、Constant Pixel Size</h5><p>像素大小始终不变，即一个100<em>100的图片在任何的分辨率下都占用100</em>100的像素。简单比较好理解。Scale Factor是表示缩放倍数。比如是2时，即将上面图片整体是缩放两倍是不变形的。</p>
-<h5 id="二、Scale-With-Screen-Size"><a href="#二、Scale-With-Screen-Size" class="headerlink" title="二、Scale With Screen Size"></a>二、Scale With Screen Size</h5><p>这种模式应用场景多一点。首先逐个说明下：</p>
+<h4 id="一、Constant-Pixel-Size"><a href="#一、Constant-Pixel-Size" class="headerlink" title="一、Constant Pixel Size"></a>一、Constant Pixel Size</h4><p>像素大小始终不变，即一个100<em>100的图片在任何的分辨率下都占用100</em>100的像素。简单比较好理解。Scale Factor是表示缩放倍数。比如是2时，即将上面图片整体是缩放两倍是不变形的。</p>
+<h4 id="二、Scale-With-Screen-Size"><a href="#二、Scale-With-Screen-Size" class="headerlink" title="二、Scale With Screen Size"></a>二、Scale With Screen Size</h4><p>这种模式应用场景多一点。首先逐个说明下：</p>
 <p>1）<strong>Reference Resolution</strong>是开发时的分辨率。以后缩放就参考它。</p>
 <p>2）<strong>Screen Match Mode</strong>又包含三种模式</p>
 <ul>
@@ -201,8 +200,8 @@
 <li><p><strong>Shrink 缩放剪切：</strong>当屏幕分辨率与设定不同时，选择变化较大的一个方向（横向还是纵向）进行缩放显示，对于超出的部分剪切不显示。</p>
 </li>
 </ul>
-<h4 id="三、Constant-Physical-Size"><a href="#三、Constant-Physical-Size" class="headerlink" title="三、Constant Physical Size"></a>三、Constant Physical Size</h4><p>保持物理上不变的方式，这个应用场景较少，具体是这样的，比如你电脑分辨率是 1000<em>2000而你的手机分辨率也是1000</em>2000。虽然电脑屏幕比手机屏幕大的多，但是他们最后显示出来图片的物理大小是一样的。</p>
-<h3 id="实例演示"><a href="#实例演示" class="headerlink" title="实例演示"></a>实例演示</h3><hr>
+<h3 id="三、Constant-Physical-Size"><a href="#三、Constant-Physical-Size" class="headerlink" title="三、Constant Physical Size"></a>三、Constant Physical Size</h3><p>保持物理上不变的方式，这个应用场景较少，具体是这样的，比如你电脑分辨率是 1000<em>2000而你的手机分辨率也是1000</em>2000。虽然电脑屏幕比手机屏幕大的多，但是他们最后显示出来图片的物理大小是一样的。</p>
+<h2 id="实例演示"><a href="#实例演示" class="headerlink" title="实例演示"></a>实例演示</h2><hr>
 <p><strong>目标：</strong></p>
 <p>角落的四个按钮在任何分辨率都能正常显示</p>
 <p><strong>Hierarchy布局：</strong></p>
